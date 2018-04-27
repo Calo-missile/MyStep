@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95dedf"
+    tools:context="com.hsc.mystep.activity.MainActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@mipmap/home_statistical"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="查看历史记录"
+            android:textColor="#333333" />
+        
+        <com.hsc.mystep.view.StepArcView
+            android:id="@+id/step_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tv_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/tv_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/step_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:drawableLeft="@mipmap/home_question_mark"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="锻炼计划"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_isSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/step_view"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="该设备支持计步"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_baidu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_isSupport"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="该设备支持计步"
+            android:textColor="#333333" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>
